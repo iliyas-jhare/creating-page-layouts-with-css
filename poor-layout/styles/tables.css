@@ -1,0 +1,51 @@
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: solid 1px #a593c2;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td img {
+    width: 100px;
+}
+
+.open-text {
+    font-size: smaller;
+}
+
+#image-th {
+    width: 15%;
+}
+
+#name-th {
+    width: 30%;
+}
+
+#description-th {
+    width: 45%;
+}
+
+#price-th,
+#details-th {
+    width: 5%;
+}
+
+.anchor-icon {
+    width: 8px !important;
+    margin-left: 5px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #d3fff3;
+}
+
+tr:nth-of-type(even) {
+    background-color: #ede2ff;
+}

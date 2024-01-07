@@ -1,0 +1,42 @@
+/* Grid */
+
+@for $col from 1 through 12 {
+    $width: ($col / 12) * 100%;
+    .medium-#{$col} {
+        flex-basis: $width;
+    }
+}
+
+/* Header */
+
+header {
+    h1 {
+        font-size: 2.85rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        height: 96px;
+    }
+}
+
+/* Navigation */
+
+nav {
+    button {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        width: 100%;
+
+        li {
+            float: left;
+            width: 25%;
+        }
+    }
+}

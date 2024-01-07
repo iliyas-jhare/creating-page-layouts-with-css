@@ -1,0 +1,24 @@
+/* Grid */
+
+@for $col from 1 through 12 {
+    $width: ($col / 12) * 100%;
+    .large-#{$col} {
+        flex-basis: $width;
+    }
+}
+
+/* Navigation */
+
+nav {
+    ul {
+        margin-left: 2vw;
+
+        li {
+            width: auto;
+
+            a {
+                padding: 0.7rem 1rem;
+            }
+        }
+    }
+}

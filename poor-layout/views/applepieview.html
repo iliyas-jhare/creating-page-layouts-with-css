@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Pie | Bethany's Pie Shop</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Bethany's Pie Shop Store Front">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/site.css" type="text/css">
+    <link rel="stylesheet" href="../styles/applepie.css" type="text/css">
+    <script src="../scripts/site.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="/poor-layout/index.html"><img src="../images/cake.svg" alt="Cake icon" /></a></li>
+                <li><a href="/poor-layout/index.html">Home</a></li>
+                <li><a href="allpiesview.html">All Pies</a></li>
+                <li><a href="contactview.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        <aside id="main-leftside">
+            <a href="/poor-layout/index.html"><img src="../images/bethanylogo.png" alt="Bethanys pie shop logo"></a>
+            <header>
+                <h6 id="sidebar-header">Browse our pies</h6>
+            </header>
+            <ul>
+                <li><a href="allpiesview.html">All Pies</a></li>
+                <li><a href="cheesecakesview.html">Cheese cakes</a></li>
+                <li><a href="fruitpiesview.html">Fruit pies</a></li>
+                <li><a href="seasonalpiesview.html">Seasonal pies</a></li>
+                <li><a href="promotionsview.html">Promotions</a></li>
+            </ul>
+            <input type="search" class="searchbox" placeholder="Search our store">
+        </aside>
+        <main id="main-rightside">
+            <article>
+                <header>
+                    <h1>Apple Pie</h1>
+                </header>
+                <figure>
+                    <a href="../images/products/applepie.jpg" target="_blank">
+                        <img src="../images/products/applepie.jpg" alt="Apple Pie">
+                    </a>
+                    <figcaption>Our world-famous apple pie</figcaption>
+                </figure>
+
+                <p>
+                    <button type="button" onclick="onFavourite()">Save as favourite</button>
+                    <span id="favourite"></span>
+                </p>
+
+                <div>
+                    <strong>Price: $12.95</strong>
+
+                    <p>
+                    <h2>Description</h2>
+                    </p>
+                    <p>
+                        Bethany received the recipe for this delicious apple pie from her grandmother. At the age of 5,
+                        she
+                        was
+                        already baking this <em>all-American traditional apple</em> pie at her home.
+                        As the recipe goes a long way back, it contains the most typical ingredients used for so many
+                        years
+                        to
+                        make this classic even today one of our most popular pies.
+                    </p>
+                    <p>
+                        This pie is available <strong>every day</strong> and comes in 2 sizes. <span>You can serve it
+                            cold or warm it for 4 minutes
+                            in the microwave to give it an extra touch. </span>Your house will smell just like Bethany's
+                        Shop!
+                    </p>
+                    <p>
+                    <blockquote>
+                        This recipe has been in our family for generations. We hope you enjoy this pie as we do -
+                        Bethany
+                    </blockquote>
+                    </p>
+
+                    <p><small>Note that some ingredients make be are dangerous if you have certain allergies. See the
+                            list
+                            of ingredients below.</small></p>
+                    <p><small>Bethany cares about the environment and we try to limit our CO<sub>2</sub> emissions as
+                            much
+                            as possible. See our terms page for more info.</small></p>
+                    <hr>
+
+                    <p>
+                    <h2>How we make this pie</h2>
+                    </p>
+                    <ol>
+                        <li>
+                            First, we combine sugar, flour and spices. We toss the apples with some lemon juice and add
+                            sugar.
+                        </li>
+                        <li>We then create the bottom crust and fill that with apple mixture. We put some butter on
+                            that. We
+                            then roll remaining crust to fit top of pie.
+                        </li>
+                        <li>Then we beat the eggs white until we have a foamy mix. That is then brushed over the crust.
+                            We
+                            sprinkle some extra sugar.
+                        </li>
+                        <li>Then the pie goes into the oven at 360° for 35 minutes. When ready, we let it cool on a wire
+                            rack.
+                        </li>
+                    </ol>
+                    <ol start=5>
+                        <li>If something goes wrong, we start all over again!</li>
+                    </ol>
+
+                    <p>
+                    <h3>Ingredients</h3>
+                    Please note that this item contains the following items and possible allergens!
+                    </p>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Eggs</li>
+                        <li>Sugar
+                            <ul>
+                                <li>Regular sugar</li>
+                                <li>Brown sugar</li>
+                                <li>Caster sugar</li>
+                            </ul>
+                        </li>
+                        <li>Flour</li>
+                        <li>Cinnamon</li>
+                        <li>Ginger</li>
+                        <li>Nutmeg</li>
+                        <li>Apples</li>
+                        <li>Lemons</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>Our address is
+            <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
+            <p>Contact us via <a href="mailto:info@bethanyspieshop">email</a></p>
+            <small id="copyright"></small>
+        </footer>
+    </div>
+</body>
+
+</html>

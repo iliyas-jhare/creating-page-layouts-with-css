@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Bethany's Pie Shop</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Bethany's Pie Shop Store Front">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/site.css" type="text/css">
+    <link rel="stylesheet" href="../styles/contact.css" type="text/css">
+    <script src="../scripts/site.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="/poor-layout/index.html"><img src="../images/cake.svg" alt="Cake icon" /></a></li>
+                <li><a href="/poor-layout/index.html">Home</a></li>
+                <li><a href="allpiesview.html">All Pies</a></li>
+                <li><a href="contactview.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        <aside id="main-leftside">
+            <a href="/poor-layout/index.html"><img src="../images/bethanylogo.png" alt="Bethanys pie shop logo"></a>
+            <header>
+                <h6 id="sidebar-header">Browse our pies</h6>
+            </header>
+            <ul>
+                <li><a href="allpiesview.html">All Pies</a></li>
+                <li><a href="cheesecakesview.html">Cheese cakes</a></li>
+                <li><a href="fruitpiesview.html">Fruit pies</a></li>
+                <li><a href="seasonalpiesview.html">Seasonal pies</a></li>
+                <li><a href="promotionsview.html">Promotions</a></li>
+            </ul>
+            <input type="search" class="searchbox" placeholder="Search our store">
+        </aside>
+        <main id="main-rightside">
+            <article>
+                <header>
+                    <h1>Contact Us</h1>
+                </header>
+                <form action="contactview.html" method="post" enctype="application/x-www-form-urlencoded">
+                    <input type="hidden" name="source" value="ContactForm">
+
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-group">
+                            <label for="name">Name <input type="text" name="name" id="name" required></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <input type="email" name="email" id="email" required></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Phone
+                                <input type="tel" name="telephone" id="telephone">
+                            </label>
+                        </div>
+                        <div class="form-group">Phone type
+                            <label><input type="radio" name="phoneType" value="cell">Cell</label>
+                            <label><input type="radio" name="phoneType" value="work">Work</label>
+                            <label><input type="radio" name="phoneType" value="home">Home</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactVia">Contact via
+                                <label><input type="checkbox" name="contactVia" value="phone">Phone</label>
+                                <label><input type="checkbox" name="contactVia" value="email">Email</label>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <div class="form-group">
+                            <label for="comments">Comments
+                                <textarea name="comments" id="" cols="30" rows="7" required></textarea>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackType">Feedback type
+                                <select name="feedbackType" id="feedbackType" multiple size="6">
+                                    <optgroup label="Stores">
+                                        <option value="webstore">Web store</option>
+                                        <option value="physstore">Physical store</option>
+                                    </optgroup>
+                                    <option value="webtech">Website issue</option>
+                                    <option value="general">General feedback</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="severity">Severity
+                                <input type="range" name="severity" id="severity" min="1" max="10">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date
+                                <input type="date" name="date" id="date">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time
+                                <input type="time" name="time" id="time">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Send">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>Our address is
+            <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
+            <p>Contact us via <a href="mailto:info@bethanyspieshop">email</a></p>
+            <small id="copyright"></small>
+        </footer>
+    </div>
+</body>
+
+</html>
