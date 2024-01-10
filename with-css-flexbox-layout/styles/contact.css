@@ -1,0 +1,93 @@
+#main-rightside {
+    flex-basis: 80%;
+}
+
+#main-rightside article {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: solid 2px #a593c2;
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 20px;
+}
+
+fieldset>legend {
+    color: #a593c2;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    width: 2rem;
+}
+
+.form-group:has(input[type="radio"]),
+.form-group:has(input[type="checkbox"]) {
+    flex-direction: row;
+}
+
+.form-group label:has(input[type="radio"]),
+.form-group label:has(input[type="checkbox"]) {
+    margin-left: 1rem;
+}
+
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    width: 50%;
+}
+
+input,
+textarea,
+select {
+    border: solid 1px #a593c2;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin: 10px 20px 10px 0;
+    padding: 0.5rem;
+    width: 5rem;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+/* Small */
+@media only screen and (max-width: 600px) {
+
+    #main-rightside {
+        flex-grow: 2;
+    }
+
+    .form-group label:has(input[type="radio"]),
+    .form-group label:has(input[type="checkbox"]) {
+        margin-left: 0.1rem;
+    }
+
+    .form-group input[type="date"],
+    .form-group input[type="time"] {
+        width: 100%;
+    }
+}
