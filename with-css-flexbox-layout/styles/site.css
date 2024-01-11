@@ -10,7 +10,6 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    align-content: center;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +22,7 @@ body {
 
 nav {
     height: 100%;
-    margin: 0 2%;
+    margin: auto 2%;
     padding: 10px;
 }
 
@@ -129,8 +128,7 @@ footer {
 }
 
 #main-content {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: auto 2%;
     align-content: center;
 }
 
@@ -200,6 +198,8 @@ footer {
     padding: 1rem;
     align-items: center;
     margin-top: auto;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 footer p {
